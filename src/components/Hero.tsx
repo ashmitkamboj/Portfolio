@@ -11,7 +11,6 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-indigo-900"></div>
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-20 animate-pulse"></div>
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-indigo-300 dark:bg-indigo-900 rounded-full mix-blend-multiply dark:mix-blend-normal filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
@@ -36,7 +35,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Full-Stack Developer & UI/UX Enthusiast
+            Full-Stack MERN Developer & UI/UX Enthusiast
           </p>
           
           <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
@@ -61,7 +60,6 @@ const Hero: React.FC = () => {
             </button>
           </div>
 
-          {/* Social Links */}
           <div className="flex justify-center space-x-6 mt-12">
             {[
               { Icon: Github, href: 'https://github.com/ashmitkamboj', label: 'GitHub' },

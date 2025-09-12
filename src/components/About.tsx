@@ -36,7 +36,6 @@ const About: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div className="space-y-6">
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -53,7 +52,6 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 gap-8 mt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">5+</div>
@@ -66,7 +64,6 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {highlights.map((highlight, index) => (
               <div
