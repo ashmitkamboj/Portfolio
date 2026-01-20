@@ -5,9 +5,7 @@ const Skills: React.FC = () => {
   {
     title: 'Frontend',
     skills: [
-      { name: 'HTML5', level: 92, color: 'from-orange-500 to-red-600' },
       { name: 'React', level: 95, color: 'from-blue-500 to-cyan-500' },
-      { name: 'React Native', level: 85, color: 'from-indigo-500 to-blue-600' },
       { name: 'TypeScript', level: 90, color: 'from-blue-600 to-blue-800' },
       { name: 'Next.js', level: 88, color: 'from-gray-800 to-black' },
       { name: 'Tailwind CSS', level: 92, color: 'from-teal-400 to-blue-500' },
@@ -22,11 +20,9 @@ const Skills: React.FC = () => {
       { name: 'Express', level: 87, color: 'from-gray-700 to-gray-900' },
       { name: 'Python', level: 85, color: 'from-yellow-400 to-blue-500' },
       { name: 'FastAPI', level: 78, color: 'from-green-400 to-emerald-600' },
-      { name: 'Firebase', level: 75, color: 'from-yellow-500 to-red-500' },
       { name: 'PostgreSQL', level: 82, color: 'from-blue-600 to-indigo-600' },
       { name: 'MySQL', level: 80, color: 'from-blue-400 to-blue-700' },
       { name: 'MongoDB', level: 80, color: 'from-green-500 to-green-800' },
-      { name: 'GraphQL', level: 75, color: 'from-pink-500 to-purple-600' },
     ]
   },
   {
@@ -34,10 +30,8 @@ const Skills: React.FC = () => {
     skills: [
       { name: 'Git', level: 95, color: 'from-orange-500 to-red-500' },
       { name: 'GitHub', level: 90, color: 'from-gray-700 to-black' },
-      { name: 'Docker', level: 78, color: 'from-blue-400 to-blue-600' },
       { name: 'AWS', level: 72, color: 'from-yellow-400 to-orange-500' },
       { name: 'Vercel', level: 82, color: 'from-black to-gray-700' },
-      { name: 'Netlify', level: 80, color: 'from-green-400 to-green-600' },
       { name: 'Figma', level: 88, color: 'from-purple-500 to-pink-500' },
       { name: 'Canva', level: 85, color: 'from-cyan-400 to-teal-500' },
     ]
@@ -45,25 +39,19 @@ const Skills: React.FC = () => {
 ];
 
 const techIcons = [
-  { name: 'HTML5', icon: '📄', color: 'hover:text-orange-600' },
   { name: 'Java', icon: '☕', color: 'hover:text-red-600' },
   { name: 'JavaScript', icon: '🟨', color: 'hover:text-yellow-500' },
   { name: 'React', icon: '⚛️', color: 'hover:text-blue-500' },
-  { name: 'React Native', icon: '📱', color: 'hover:text-indigo-500' },
   { name: 'TypeScript', icon: '🔷', color: 'hover:text-blue-600' },
   { name: 'Node.js', icon: '🟢', color: 'hover:text-green-500' },
   { name: 'Express.js', icon: '🚂', color: 'hover:text-gray-500' },
   { name: 'Python', icon: '🐍', color: 'hover:text-yellow-400' },
   { name: 'FastAPI', icon: '⚡', color: 'hover:text-green-500' },
-  { name: 'Firebase', icon: '🔥', color: 'hover:text-yellow-500' },
   { name: 'PostgreSQL', icon: '🐘', color: 'hover:text-blue-600' },
   { name: 'MySQL', icon: '🐬', color: 'hover:text-blue-500' },
   { name: 'MongoDB', icon: '🍃', color: 'hover:text-green-600' },
-  { name: 'GraphQL', icon: '🕸️', color: 'hover:text-pink-500' },
-  { name: 'Docker', icon: '🐳', color: 'hover:text-blue-500' },
   { name: 'AWS', icon: '☁️', color: 'hover:text-orange-500' },
   { name: 'Vercel', icon: '▲', color: 'hover:text-black' },
-  { name: 'Netlify', icon: '🌿', color: 'hover:text-green-500' },
   { name: 'Git', icon: '📊', color: 'hover:text-orange-600' },
   { name: 'GitHub', icon: '🐙', color: 'hover:text-gray-800' },
   { name: 'Figma', icon: '🎨', color: 'hover:text-purple-500' },
@@ -154,8 +142,7 @@ const techIcons = [
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Responsive Design', 'API Development', 'Database Design', 'UI/UX Design',
-              'Team Leadership', 'Technical Writing', 'Open Source'
+              'Team Leadership', 'Open Source'
             ].map((skill) => (
               <span
                 key={skill}
