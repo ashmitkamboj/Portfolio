@@ -1,88 +1,66 @@
 import React from 'react';
-import { Code, Coffee, Heart, Users } from 'lucide-react';
 
 const About: React.FC = () => {
-  const highlights = [
-    {
-      icon: Code,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable code that stands the test of time.'
-    },
-    {
-      icon: Coffee,
-      title: 'Problem Solver',
-      description: 'Turning complex challenges into elegant, user-friendly solutions.'
-    },
-    {
-      icon: Heart,
-      title: 'Passionate',
-      description: 'Genuinely excited about technology and continuous learning.'
-    },
-    {
-      icon: Users,
-      title: 'Collaborative',
-      description: 'Working effectively with teams to deliver exceptional results.'
-    }
-  ];
-
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 transform transition-all duration-500 hover:scale-105">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-6"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="prose prose-lg dark:prose-invert max-w-none">
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer with over 2 years of experience creating 
-                digital solutions that bridge the gap between design and technology. My journey 
-                began with a curiosity about how things work, and it has evolved into a love 
-                for crafting experiences that users genuinely enjoy.
-              </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge with the developer community. I believe 
-                in the power of collaboration and continuous learning to push the boundaries of 
-                what's possible.
+            <div className="bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-2xl p-8 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl perspective-1000 hover:rotate-1">
+              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                I'm a passionate Full Stack Developer with expertise in the MERN stack and a growing interest in Artificial Intelligence and Machine Learning. I love building modern web applications that solve real-world problems.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 mt-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">5+</div>
-                <div className="text-gray-600 dark:text-gray-400">Projects Completed</div>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-4 transform transition-all duration-300 hover:translate-x-2">
+                <div className="w-2 h-2 bg-indigo-600 rounded-full mt-3"></div>
+                <p className="text-gray-700 dark:text-gray-300">
+                  Specialized in building full-stack applications using MongoDB, Express.js, React.js, and Node.js
+                </p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">2+</div>
-                <div className="text-gray-600 dark:text-gray-400">Years Experience</div>
+              <div className="flex items-start space-x-4 transform transition-all duration-300 hover:translate-x-2">
+                <div className="w-2 h-2 bg-purple-600 rounded-full mt-3"></div>
+                <p className="text-gray-700 dark:text-gray-300">
+                  Exploring AI/ML technologies including TensorFlow, PyTorch, and scikit-learn
+                </p>
+              </div>
+              <div className="flex items-start space-x-4 transform transition-all duration-300 hover:translate-x-2">
+                <div className="w-2 h-2 bg-green-600 rounded-full mt-3"></div>
+                <p className="text-gray-700 dark:text-gray-300">
+                  Passionate about creating scalable APIs and efficient database solutions
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {highlights.map((highlight, index) => (
-              <div
-                key={highlight.title}
-                className="group p-6 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all duration-300 transform hover:scale-105"
-              >
-                <div className="flex items-center mb-4">
-                  <div className="p-3 bg-indigo-100 dark:bg-indigo-900/30 rounded-lg group-hover:bg-indigo-200 dark:group-hover:bg-indigo-800/50 transition-colors duration-300">
-                    <highlight.icon className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
-                  </div>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  {highlight.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                  {highlight.description}
-                </p>
-              </div>
-            ))}
+          <div className="grid grid-cols-2 gap-6">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg transform transition-all duration-500 hover:rotate-2 hover:scale-105 hover:shadow-xl hover:-translate-y-2 perspective-1000">
+              <h3 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-2">3+</h3>
+              <p className="text-gray-700 dark:text-gray-300">Years of Experience</p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg transform transition-all duration-500 hover:-rotate-2 hover:scale-105 hover:shadow-xl hover:-translate-y-2 perspective-1000">
+              <h3 className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">15+</h3>
+              <p className="text-gray-700 dark:text-gray-300">Projects Completed</p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg transform transition-all duration-500 hover:rotate-1 hover:scale-105 hover:shadow-xl hover:-translate-y-2 perspective-1000">
+              <h3 className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">10+</h3>
+              <p className="text-gray-700 dark:text-gray-300">AI/ML Models</p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg transform transition-all duration-500 hover:-rotate-1 hover:scale-105 hover:shadow-xl hover:-translate-y-2 perspective-1000">
+              <h3 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">5+</h3>
+              <p className="text-gray-700 dark:text-gray-300">Certifications</p>
+            </div>
           </div>
         </div>
       </div>

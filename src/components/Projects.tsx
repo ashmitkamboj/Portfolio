@@ -6,68 +6,50 @@ const Projects: React.FC = () => {
     {
       id: 1,
       title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and real-time inventory management.',
+      description: 'A full-stack e-commerce platform with MERN stack. Features include user authentication, product management, shopping cart, payment integration, and order tracking with real-time updates.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux', 'Stripe'],
       liveUrl: 'https://example-ecommerce.com',
       githubUrl: 'https://github.com/johndoe/ecommerce-platform',
       date: '2024',
       featured: true,
+      category: 'Full Stack',
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      title: 'Task Management System',
+      description: 'A collaborative task management application with real-time updates, drag-and-drop interface, team collaboration features, and productivity analytics dashboard.',
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'TypeScript', 'Socket.io', 'MongoDB', 'Express'],
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Tailwind'],
       liveUrl: 'https://example-taskapp.com',
       githubUrl: 'https://github.com/johndoe/task-manager',
       date: '2024',
       featured: true,
+      category: 'Full Stack',
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather dashboard with location-based forecasts, interactive maps, and personalized weather alerts.',
-      image: 'https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['OpenWeather API'],
-      liveUrl: 'https://example-weather.com',
-      githubUrl: 'https://github.com/johndoe/weather-dashboard',
-      date: '2023',
-      featured: false,
+      title: 'AI Image Classifier',
+      description: 'Deep learning model for image classification using Convolutional Neural Networks. Built with TensorFlow and trained on custom dataset with 95% accuracy.',
+      image: 'https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Python', 'TensorFlow', 'Keras', 'NumPy', 'Pandas', 'Flask'],
+      liveUrl: 'https://example-ai-classifier.com',
+      githubUrl: 'https://github.com/johndoe/ai-image-classifier',
+      date: '2024',
+      featured: true,
+      category: 'AI/ML',
     },
     {
       id: 4,
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website showcasing modern web development practices with dark mode support and smooth animations.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-      liveUrl: 'https://johndoe-portfolio.com',
-      githubUrl: 'https://github.com/johndoe/portfolio',
-      date: '2023',
-      featured: false,
-    },
-    {
-      id: 5,
-      title: 'Social Media Analytics',
-      description: 'A comprehensive analytics dashboard for social media platforms with data visualization and performance tracking.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'Python', 'FastAPI', 'PostgreSQL'],
-      liveUrl: 'https://example-analytics.com',
-      githubUrl: 'https://github.com/johndoe/social-analytics',
-      date: '2023',
-      featured: false,
-    },
-    {
-      id: 6,
-      title: 'AI Content Generator',
-      description: 'An AI-powered content generation tool that helps users create blog posts, social media content, and marketing copy.',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'OpenAI API', 'Node.js', 'Redis', 'Tailwind CSS'],
-      liveUrl: 'https://example-ai-content.com',
-      githubUrl: 'https://github.com/johndoe/ai-content-generator',
+      title: 'Social Network API',
+      description: 'Complete REST API for a social networking platform with user authentication, posts, comments, likes, and real-time notifications.',
+      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'Socket.io'],
+      liveUrl: 'https://example-social-api.com',
+      githubUrl: 'https://github.com/johndoe/social-network-api',
       date: '2024',
       featured: false,
+      category: 'Full Stack',
     },
   ];
 
@@ -75,46 +57,55 @@ const Projects: React.FC = () => {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 transform transition-all duration-500 hover:scale-105">
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            A collection of projects that showcase my skills and passion for creating exceptional digital experiences.
+            A selection of my full-stack and AI/ML projects
           </p>
         </div>
 
-        {/* Featured Projects */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {featuredProjects.map((project) => (
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {featuredProjects.map((project, index) => (
             <div
               key={project.id}
-              className="group relative bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02]"
+              className="group relative bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 perspective-1000 hover:rotate-1"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
-                    <Calendar size={14} />
-                    <span>{project.date}</span>
-                  </div>
-                  <span className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 text-xs font-medium rounded-full">
-                    Featured
-                  </span>
+              <div className="relative">
+                <div className="aspect-video overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                 </div>
                 
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
+                <div className="absolute top-4 left-4">
+                  <span
+                    className={`px-3 py-1 text-xs font-semibold rounded-full ${
+                      project.category === 'AI/ML'
+                        ? 'bg-purple-500 text-white'
+                        : 'bg-indigo-500 text-white'
+                    }`}
+                  >
+                    {project.category}
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <div className="flex items-center space-x-2 text-sm text-gray-500 dark:text-gray-400 mb-3">
+                  <Calendar size={14} />
+                  <span>{project.date}</span>
+                </div>
+                
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
                   {project.title}
                 </h3>
                 
@@ -123,35 +114,40 @@ const Projects: React.FC = () => {
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => (
+                  {project.technologies.slice(0, 4).map((tech) => (
                     <span
                       key={tech}
-                      className="inline-flex items-center px-2.5 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-md"
+                      className="inline-flex items-center px-2.5 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 text-xs font-medium rounded-md"
                     >
                       <Tag size={10} className="mr-1" />
                       {tech}
                     </span>
                   ))}
+                  {project.technologies.length > 4 && (
+                    <span className="inline-flex items-center px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-medium rounded-md">
+                      +{project.technologies.length - 4}
+                    </span>
+                  )}
                 </div>
                 
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-3">
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 space-x-2"
+                    className="flex-1 inline-flex items-center justify-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
                   >
-                    <ExternalLink size={14} />
-                    <span>Live Demo</span>
+                    <ExternalLink size={14} className="mr-2" />
+                    Live Demo
                   </a>
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-lg transition-colors duration-200 space-x-2"
+                    className="flex-1 inline-flex items-center justify-center px-4 py-2 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
                   >
-                    <Github size={14} />
-                    <span>Code</span>
+                    <Github size={14} className="mr-2" />
+                    Code
                   </a>
                 </div>
               </div>
@@ -159,16 +155,15 @@ const Projects: React.FC = () => {
           ))}
         </div>
 
-        {/* Other Projects */}
         <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white text-center mb-8">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-8">
             Other Projects
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
               <div
                 key={project.id}
-                className="group bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="group bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 perspective-1000 hover:rotate-1"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="aspect-video mb-4 overflow-hidden rounded-lg">
@@ -180,7 +175,7 @@ const Projects: React.FC = () => {
                 </div>
                 
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
                     {project.title}
                   </h4>
                   <span className="text-sm text-gray-500 dark:text-gray-400">{project.date}</span>
@@ -194,13 +189,13 @@ const Projects: React.FC = () => {
                   {project.technologies.slice(0, 3).map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs rounded"
+                      className="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 text-xs rounded"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs rounded">
+                    <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs rounded">
                       +{project.technologies.length - 3}
                     </span>
                   )}
@@ -231,19 +226,15 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
         <div className="text-center">
-          <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Interested in seeing more of my work?
-          </p>
           <a
             href="https://github.com/ashmitkamboj"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 font-medium rounded-lg transition-colors duration-200 space-x-2"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
           >
-            <Github size={16} />
-            <span>View All Projects on GitHub</span>
+            <Github size={16} className="mr-2" />
+            View All Projects on GitHub
           </a>
         </div>
       </div>
