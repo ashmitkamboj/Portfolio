@@ -70,7 +70,7 @@ const About: React.FC = () => {
               className="bg-slate-900/50 backdrop-blur-sm border border-slate-800/50 rounded-2xl p-6 shadow-xl transform transition-all duration-500 hover:rotate-6 hover:scale-110 hover:shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:border-indigo-500/30 hover:-translate-y-3 preserve-3d"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              <h3 className="text-4xl font-bold text-indigo-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:rotate-6 hover:drop-shadow-[0_0_10px_rgba(129,140,248,0.5)]">3+</h3>
+              <h3 className="text-4xl font-bold text-indigo-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:rotate-6 hover:drop-shadow-[0_0_10px_rgba(129,140,248,0.5)]">1.5+</h3>
               <p className="text-gray-400 font-medium">Years of Experience</p>
             </div>
 
@@ -78,7 +78,7 @@ const About: React.FC = () => {
               className="bg-slate-900/50 backdrop-blur-sm border border-slate-800/50 rounded-2xl p-6 shadow-xl transform transition-all duration-500 hover:-rotate-6 hover:scale-110 hover:shadow-[0_0_20px_rgba(167,139,250,0.2)] hover:border-violet-500/30 hover:-translate-y-3 preserve-3d"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              <h3 className="text-4xl font-bold text-violet-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:-rotate-6 hover:drop-shadow-[0_0_10px_rgba(167,139,250,0.5)]">15+</h3>
+              <h3 className="text-4xl font-bold text-violet-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:-rotate-6 hover:drop-shadow-[0_0_10px_rgba(167,139,250,0.5)]">4+</h3>
               <p className="text-gray-400 font-medium">Projects Completed</p>
             </div>
 
@@ -86,7 +86,7 @@ const About: React.FC = () => {
               className="bg-slate-900/50 backdrop-blur-sm border border-slate-800/50 rounded-2xl p-6 shadow-xl transform transition-all duration-500 hover:rotate-3 hover:scale-110 hover:shadow-[0_0_20px_rgba(52,211,153,0.2)] hover:border-emerald-500/30 hover:-translate-y-3 preserve-3d mt-8"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              <h3 className="text-4xl font-bold text-emerald-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:rotate-3 hover:drop-shadow-[0_0_10px_rgba(52,211,153,0.5)]">10+</h3>
+              <h3 className="text-4xl font-bold text-emerald-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:rotate-3 hover:drop-shadow-[0_0_10px_rgba(52,211,153,0.5)]">2+</h3>
               <p className="text-gray-400 font-medium">AI/ML Models</p>
             </div>
 
@@ -94,7 +94,7 @@ const About: React.FC = () => {
               className="bg-slate-900/50 backdrop-blur-sm border border-slate-800/50 rounded-2xl p-6 shadow-xl transform transition-all duration-500 hover:-rotate-3 hover:scale-110 hover:shadow-[0_0_20px_rgba(34,211,238,0.2)] hover:border-cyan-500/30 hover:-translate-y-3 preserve-3d mt-8"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              <h3 className="text-4xl font-bold text-cyan-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:-rotate-3 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">5+</h3>
+              <h3 className="text-4xl font-bold text-cyan-400 mb-2 transform transition-all duration-300 hover:scale-125 hover:-rotate-3 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">4+</h3>
               <p className="text-gray-400 font-medium">Certifications</p>
             </div>
           </div>

@@ -30,9 +30,9 @@ const Contact: React.FC = () => {
     setSubmitStatus('idle');
 
     // REPLACE THESE WITH YOUR ACTUAL EMAILJS KEYS
-    const SERVICE_ID = 'YOUR_SERVICE_ID';
-    const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-    const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+    const SERVICE_ID = 'service_o2tfc7e';
+    const TEMPLATE_ID = 'template_pdp9n9n';
+    const PUBLIC_KEY = 'aRj3-j3RhfUj_FBB0';
 
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY);
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
-                    <p className="text-gray-200 font-medium">ashmit@example.com</p>
+                    <p className="text-gray-200 font-medium">ashmitkamboj@gmail.com</p>
                   </div>
                 </div>
 
@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Phone</p>
-                    <p className="text-gray-200 font-medium">+1 234 567 8900</p>
+                    <p className="text-gray-200 font-medium">+91 9045405279</p>
                   </div>
                 </div>
 
@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Location</p>
-                    <p className="text-gray-200 font-medium">San Francisco, CA</p>
+                    <p className="text-gray-200 font-medium">Greater Noida, Uttar Pradesh</p>
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ const Contact: React.FC = () => {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/ashmit"
+                href="https://linkedin.com/in/ashmitkamboj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center px-6 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all duration-300 transform hover:scale-110 hover:shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:-rotate-3 preserve-3d"
