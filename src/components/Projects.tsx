@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
       githubUrl: 'https://github.com/yourusername/project',
       date: '2024',
       featured: true,
-      category: 'MERN Stack', // or 'AI/ML'
+      category: 'MERN Stack',
     },
     // Add more projects here
   ];
