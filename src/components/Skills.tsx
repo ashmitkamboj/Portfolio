@@ -50,14 +50,14 @@ const Skills: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-6 transform transition-all duration-500 hover:scale-125 hover:rotate-3"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Expertise in full-stack development with MERN and AI/ML technologies
+            Expertise in MERN stack development and AI/ML technologies
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div 
+          <div
             className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl preserve-3d"
-            style={{ 
+            style={{
               transformStyle: 'preserve-3d',
               transform: `rotateX(${mousePosition.y * -0.5}deg) rotateY(${mousePosition.x * 0.5}deg)`
             }}
@@ -108,9 +108,9 @@ const Skills: React.FC = () => {
             </div>
           </div>
 
-          <div 
+          <div
             className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-3xl preserve-3d"
-            style={{ 
+            style={{
               transformStyle: 'preserve-3d',
               transform: `rotateX(${mousePosition.y * -0.5}deg) rotateY(${mousePosition.x * -0.5}deg)`
             }}

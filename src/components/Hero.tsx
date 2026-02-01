@@ -28,15 +28,15 @@ const Hero: React.FC = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm font-medium transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:shadow-lg">
                 <Cpu className="w-4 h-4 mr-2" />
-                Full Stack Developer & AI/ML Enthusiast
+                MERN & AI Developer
               </div>
-              
+
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
                 <span className="transform transition-all duration-700 hover:rotate-3 inline-block hover:scale-110 cursor-default">
                   Hi, I'm Ashmit
                 </span>
               </h1>
-              
+
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 Building intelligent web applications with{' '}
                 <span className="text-indigo-600 dark:text-indigo-400 font-semibold transform transition-all duration-300 hover:scale-110 hover:-rotate-1 inline-block cursor-default">
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
           <div className="relative" style={{ transform: `translateX(${mousePosition.x * 0.5}px) translateY(${mousePosition.y * 0.5}px)` }}>
             <div className="grid grid-cols-2 gap-6 perspective-1000">
               <div className="space-y-6">
-                <div 
+                <div
                   className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-2xl transform transition-all duration-500 hover:rotate-6 hover:scale-110 hover:shadow-3xl hover:-translate-y-4 preserve-3d"
                   style={{ transformStyle: 'preserve-3d' }}
                 >
@@ -78,11 +78,11 @@ const Hero: React.FC = () => {
                     MERN Stack
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Building full-stack web applications
+                    Building MERN stack web applications
                   </p>
                 </div>
 
-                <div 
+                <div
                   className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-2xl transform transition-all duration-500 hover:-rotate-6 hover:scale-110 hover:shadow-3xl hover:-translate-y-4 preserve-3d"
                   style={{ transformStyle: 'preserve-3d' }}
                 >
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
               </div>
 
               <div className="space-y-6 mt-12">
-                <div 
+                <div
                   className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-2xl transform transition-all duration-500 hover:rotate-6 hover:scale-110 hover:shadow-3xl hover:-translate-y-4 preserve-3d"
                   style={{ transformStyle: 'preserve-3d' }}
                 >
@@ -110,7 +110,7 @@ const Hero: React.FC = () => {
                   </p>
                 </div>
 
-                <div 
+                <div
                   className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-2xl transform transition-all duration-500 hover:-rotate-6 hover:scale-110 hover:shadow-3xl hover:-translate-y-4 preserve-3d"
                   style={{ transformStyle: 'preserve-3d' }}
                 >
