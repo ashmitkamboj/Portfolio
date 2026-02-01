@@ -21,7 +21,7 @@ const Certifications: React.FC = () => {
       title: 'Certification Name',
       issuer: 'Issuing Organization',
       date: '2024',
-      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', // Replace with relevant icon
+      image: '', // Replace with relevant icon
       credentialUrl: 'https://example.com/credential',
       description: 'Description of the certification and what you learned.',
     },
