@@ -29,7 +29,6 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    // REPLACE THESE WITH YOUR ACTUAL EMAILJS KEYS
     const SERVICE_ID = 'service_o2tfc7e';
     const TEMPLATE_ID = 'template_pdp9n9n';
     const PUBLIC_KEY = 'aRj3-j3RhfUj_FBB0';
